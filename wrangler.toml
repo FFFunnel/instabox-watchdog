@@ -1,0 +1,8 @@
+name = "instabox-watchdog"
+main = "src/index.js"
+compatibility_date = "2026-10-28"
+workers_dev = true
+
+# 与 InstaBox-Tool 默认间隔一致：每 5 分钟续一次 15 分钟活动租约。
+[triggers]
+crons = ["*/5 * * * *"]
